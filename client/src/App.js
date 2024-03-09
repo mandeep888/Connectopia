@@ -3,14 +3,15 @@ import {Container , AppBar , Grow ,Grid ,Typography} from '@material-ui/core'
 import memories from "./images/memories.png"
 import Form from "./components/Form/Form"
 import Posts from "./components/Posts/Posts"
+import {getPosts} from './actions/posts'
 import useStyles from './styles'
 import {useDispatch} from 'react-redux'
 const App = ()=>{
     const dispatch = useDispatch();
     const classes = useStyles();
     useEffect(() => {
-        dispatch()
-    })
+        dispatch(getPosts)
+    },[dispatch])
     return(
         <div>
             <Container maxWidth='lg'>
