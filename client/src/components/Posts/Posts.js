@@ -1,8 +1,10 @@
 import React from "react";
 import Post from "./Post/Post";
-import useStyles from './styles'
-
+import useStyles from './style'
+import { useSelector } from "react-redux";
 const Posts =()=>{
+    const posts = useSelector((state)=>state.posts) // here state represent the whole redux store
+    console.log(posts)
     const classes = useStyles();
     return(
         <>
