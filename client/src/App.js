@@ -1,4 +1,4 @@
-import react, { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import {Container , AppBar , Grow ,Grid ,Typography} from '@material-ui/core'
 import memories from "./images/memories.png"
 import Form from "./components/Form/Form"
@@ -10,7 +10,7 @@ const App = ()=>{
     const dispatch = useDispatch();
     const classes = useStyles();
     useEffect(() => {
-        dispatch(getPosts)
+        dispatch(getPosts())
     },[dispatch])
     return(
         <div>
