@@ -3,6 +3,7 @@ export default (posts=[] , action)=>{
         case 'FETCH_ALL':
             return action.payload;
         case 'DELETE':
+        case "LIKE":
             return posts.filter((post)=> post._id !== action.payload);
         case 'CREATE':
             return [...posts,action.payload]
