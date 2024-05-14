@@ -1,3 +1,4 @@
 # dependencies
 node_modules
 Default_src
+.env
