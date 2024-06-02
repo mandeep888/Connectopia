@@ -6,8 +6,9 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Auth from './components/Auth/Auth'
 
 const App = ()=>{
+    
     return(
-        <BrowserRouter>
+            <BrowserRouter>
             <Container maxWidth='lg'>
                 <Navbar/>
                 <Routes>
@@ -16,6 +17,7 @@ const App = ()=>{
                 </Routes>
             </Container>
         </BrowserRouter>
+
     )
 }
 
