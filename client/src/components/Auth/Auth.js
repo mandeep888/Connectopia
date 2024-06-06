@@ -37,6 +37,7 @@ const Auth = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if(isSignUp){
+      console.log("in Auth dispatching",formData);
       dispatch(signUp(formData,navigate))
     }else{
       dispatch(signIn(formData,navigate))
@@ -59,6 +60,8 @@ const Auth = () => {
     console.log("Google sign in was unsuccessful try again later")
   }
   const handleChange = (e) => {
+    console.log("handle Change calling for",e.target.name)
+    console.log("handle Change calling for whose values is",e.target.value)
     setFormData({...formData,[e.target.name]:e.target.value})
   }
   const switchMode = () => {
@@ -82,7 +85,7 @@ const Auth = () => {
               isSignUp && (
                 <>
                   <Input name="firstName" label="First Name" handleChange={handleChange} autoFocus half />
-                  <Input name="lastname" label="Last Name" handleChange={handleChange} half />
+                  <Input name="lastName" label="Last Name" handleChange={handleChange} half />
                 </>
               )
             }

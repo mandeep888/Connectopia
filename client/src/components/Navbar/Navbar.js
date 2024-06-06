@@ -5,7 +5,7 @@ import useStyles from './styles'
 import memories from "../../images/memories.png"
 import { useDispatch } from 'react-redux';
 import { LOGOUT } from '../../constants/actionTypes';
-
+import  { jwtDecode }  from 'jwt-decode';
 const Navbar = () => {
     const classes = useStyles()
     const dispatch = useDispatch();
@@ -17,10 +17,18 @@ const Navbar = () => {
         navigate('/');
         setUser(null);
     }
-    useEffect(()=>{
-        // const token = user?.token;
+    useEffect(() => {
+        const token = user?.token;
+    
+        if (token) {
+          const decodedToken = jwtDecode(token);
+    
+          if (decodedToken.exp * 1000 < new Date().getTime()) logout();
+        }
+    
         setUser(JSON.parse(localStorage.getItem('profile')));
-    },[location])
+      }, [location]);
+      
     return (
         <AppBar className={classes.appBar} position='static' color='inherit'>
             <div className={classes.brandContainer}>
