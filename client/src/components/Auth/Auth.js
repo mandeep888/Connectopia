@@ -60,8 +60,8 @@ const Auth = () => {
     console.log("Google sign in was unsuccessful try again later")
   }
   const handleChange = (e) => {
-    console.log("handle Change calling for",e.target.name)
-    console.log("handle Change calling for whose values is",e.target.value)
+    // console.log("handle Change calling for",e.target.name)
+    // console.log("handle Change calling for whose values is",e.target.value)
     setFormData({...formData,[e.target.name]:e.target.value})
   }
   const switchMode = () => {
