@@ -1,6 +1,7 @@
 body{
-    background-color: #BDBDBD;
+    /* background-color: #BDBDBD;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc8a8a' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa2929' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23cd7d89' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23ac1b3b' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23ca6f8d' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23ab0f4e' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23c56394' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23a41061' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23ba5a9e' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23991b74' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa53aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23882885' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
 background-attachment: fixed;
-background-size: cover;
+background-size: cover; */
+background-color: #dcdcdc;
 }
